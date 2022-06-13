@@ -1,7 +1,7 @@
 import { useState  } from 'react';
 
 import FormInput from '../form-input/form-input.component';
-// import Button from '../button/button.component';
+import Button from '../button/button.component';
 import { createAuthUserWithEmailAndPassword,
      createUserDocumentFromAuth  } 
 from '../../utils/firebase.utils';
@@ -82,7 +82,7 @@ const SignUpForm = () => {
                     required onChange={handleChange}  
                     name="confirmPassword" 
                     value={ confirmPassword}/>
-                <button type="submit">Sign Up</button>
+                <Button buttonType='inverted'>Sign Up</Button>
             </form>
         </div>
     );
